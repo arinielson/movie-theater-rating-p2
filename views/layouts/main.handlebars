@@ -6,14 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie GO! | Home</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="/public/css/style.css">
   </head>
   <body>
     <header>
         <h1>Movie GO!</h1>
     </header>
 
-    <div>
-        <!--SLIDER IMAGE-->
+    <div>        
+        <!--CAROUSEL DIV-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">                
+                <img src="./assets/AMC-Theatres.jpg" style="width:100%">
+            </div>
+
+        <div class="mySlides fade">        
+        <img src="./assets/Cinemark_Theatres.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">        
+        <img src="./assets/Megaplex_Theatres.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    
     </div>
 
     <main>        
@@ -50,6 +75,7 @@
     <script>
       $(document).foundation();
     </script>
+    <script src="/public/js/script.js"></script>
 
   </body>
 </html>
