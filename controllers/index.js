@@ -1,0 +1,1 @@
+const homeRoutes = require('./homeRoutes');
