@@ -1,12 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #211B1A;
+}
+
+p {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul li {
+  font-family: Arial, sans-serif;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+footer {
+  text-align: center;
+  color: #C8C8C8;
+  font-family: Arial, sans-serif;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.fx-display {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selected-theatre {
+  margin: 1rem;
+  width: 25%;
+}
+
+.theatre-name {
+  border-radius: 10px;
+  padding: 2rem;
+  background: #C8C8C8;
+  box-shadow: rgba(198, 21, 21, 0.07) 0px 1px 2px, rgba(198, 21, 21, 0.07) 0px 2px 4px, rgba(198, 21, 21, 0.07) 0px 4px 8px, rgba(198, 21, 21, 0.07) 0px 8px 16px, rgba(198, 21, 21, 0.07) 0px 16px 32px, rgba(198, 21, 21, 0.07) 0px 32px 64px;
+}
+
+.theatre-address {
+  width: 25%;
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+  background: #C8C8C8;
+  box-shadow: rgba(198, 21, 21, 0.07) 0px 1px 2px, rgba(198, 21, 21, 0.07) 0px 2px 4px, rgba(198, 21, 21, 0.07) 0px 4px 8px, rgba(198, 21, 21, 0.07) 0px 8px 16px, rgba(198, 21, 21, 0.07) 0px 16px 32px, rgba(198, 21, 21, 0.07) 0px 32px 64px;
+}
+
+.review {
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 1rem;
+  background: #C8C8C8;
+  box-shadow: rgba(198, 21, 21, 0.07) 0px 1px 2px, rgba(198, 21, 21, 0.07) 0px 2px 4px, rgba(198, 21, 21, 0.07) 0px 4px 8px, rgba(198, 21, 21, 0.07) 0px 8px 16px, rgba(198, 21, 21, 0.07) 0px 16px 32px, rgba(198, 21, 21, 0.07) 0px 32px 64px;
+}
+
+.review-input input {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.pop1 img {
+  transform: scaleX(-1) rotate(15deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+}
+
+.pop2 img {
+  transform: scaleX(1) rotate(15deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+}
+
+/* ================ */
+
+/* Styles for Movie Go! Header */
+h1 {
+  color: #C8C8C8;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  -moz-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+  -webkit-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+  -o-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+  -ms-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+  transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+  /*-----------------------*/
+  text-shadow: 1px 1px #C61515, 2px 2px #C61515, 3px 3px #C61515, 4px 4px #C61515, 5px 5px #C61515, 6px 6px #C61515, 7px 7px #C61515, 8px 8px #C61515, 9px 9px #C61515, 10px 10px #C61515, 11px 11px #C61515, 12px 12px #C61515, 13px 13px #C61515, 14px 14px #C61515, 15px 15px #C61515, 16px 16px #C61515, 17px 17px #C61515, 18px 18px #C61515, 19px 19px #C61515, 20px 20px #C61515, 21px 21px #C61515, 22px 22px #C61515, 23px 23px #C61515, 24px 24px #C61515, 25px 25px #C61515, 26px 26px 6px #AB1212;
+
+}
+
+span:nth-child(3), span:nth-child(7) {
+font-size: 60px;
+}
+
+span:nth-child(1), span:nth-child(9), span:nth-child(5)  {
+  font-size: 110px;
+}
+
+/* ================ */
+
 /* Styles for carousel images */
 .mySlides {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
+  margin-left: 2rem;
+  margin-right: 2rem;  
 }
 
 /* Next & previous buttons */
@@ -17,6 +129,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
+  background-color: #C8C8C8;
   color: #000;
   font-weight: bold;
   font-size: 18px;
@@ -33,7 +146,7 @@ img {vertical-align: middle;}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8); 
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* The dots/bullets/indicators */
@@ -59,11 +172,22 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+@media screen and (max-width: 1530px) {
+  .pop2 img { display: none; }
+  .selected-theatre, .theatre-address { width: 30%;}
+
+}
+
+@media screen and (max-width: 1270px) {
+  .pop1 img { display: none; }
+  .selected-theatre, .theatre-address { width: 38%;}
 }
