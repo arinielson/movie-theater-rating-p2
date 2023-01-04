@@ -1,17 +1,5 @@
-const megaPlex = {
-    
-}
+const router = require('express').Router(); 
 
+const { Theatre } = require('../../models');
 
-
-
-
-
-
-
-
-
-
-module.exports = {
-
-}
+module.exports = router; 
