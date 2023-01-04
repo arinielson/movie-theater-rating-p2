@@ -25,3 +25,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+// end of carousel function 
+
+// function for click theatre photo that 
+// 
