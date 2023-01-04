@@ -1,34 +1,25 @@
-const { DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const { User, Review } = require('../models');
 
+const userData = require('./userData.json');
+const theatreData = require('./theatreData.json');
 
+const seedDatabase = async () => {
+  await sequelize.sync({ force: true });
 
-User.init(
-    {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true,
-        },
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: true,
-            validate: {
-                isEmail: true,
-        },
-    },
-    password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            len: [20],
-        },
-    },
-    }
-);
+  const users = await User.bulkCreate(userData, {
+    individualHooks: true,
+    returning: true,
+  });
+
+  for (const theatre of theatreData) {
+    await Theatre.create({
+      ...theatre,
+      user_id: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
+
+  process.exit(0);
+};
+
+seedDatabase();
