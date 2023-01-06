@@ -26,16 +26,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 // end of carousel function 
-
-// 
-document.querySelector('.review-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  fetch('/')
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
-      console.error(err);
-    });
-});
