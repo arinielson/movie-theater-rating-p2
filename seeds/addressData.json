@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "address_number": "1600",
+        "address_name": "Fox Park Dr",
+        "address_city": "West Jordan",
+        "address_state": "UT",
+        "address_zip": "84088",
+        "theatre_id": "1"
+    },
+    {
+        "id": "2",
+        "address_number": "728",
+        "address_name": "W 1428 N",
+        "address_city": "Layton",
+        "address_state": "UT",
+        "address_zip": "84041",
+        "theatre_id": "1"
+    },
+    {
+        "id": "3",
+        "address_number": "2227",
+        "address_name": "S Highland Dr",
+        "address_city": "Salt Lake City",
+        "address_state": "UT",
+        "address_zip": "84106",
+        "theatre_id": "2"
+    },
+    {
+        "id": "4",
+        "address_number": "7301",
+        "address_name": "S Jordan Landing Blvd",
+        "address_city": "West Jordan",
+        "address_state": "UT",
+        "address_zip": "84084",
+        "theatre_id": "2"
+    },
+    {
+        "id": "5",
+        "address_number": "9335",
+        "address_name": "State St",
+        "address_city": "Sandy",
+        "address_state": "UT",
+        "address_zip": "84070",
+        "theatre_id": "3"
+    },
+    {
+        "id": "6",
+        "address_number": "3761",
+        "address_name": "W Parkway Plaza Dr",
+        "address_city": "South Jordan",
+        "address_state": "UT",
+        "address_zip": "84095",
+        "theatre_id": "3"
+    }
+]

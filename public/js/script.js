@@ -27,5 +27,15 @@ function showSlides(n) {
 }
 // end of carousel function 
 
-// function for click theatre photo that 
 // 
+document.querySelector('.review-form').addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  fetch('/')
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+});

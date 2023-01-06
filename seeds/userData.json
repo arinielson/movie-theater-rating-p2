@@ -1,18 +1,26 @@
 [
     {
+        "id": "1",
         "name": "Alec",
-        "email": "alec@mail.com"
+        "email": "alec@mail.com",
+        "password": "password"
     },
     {
+        "id": "2",
         "name": "Ari",
-        "email": "ari@mail.com"
+        "email": "ari@mail.com",
+        "password": "password"
     },
     {
+        "id": "3",
         "name": "Eden",
-        "email": "eden@mail.com"        
+        "email": "eden@mail.com",
+        "password": "password"      
     },
     {
+        "id": "4",
         "name": "Kenna",
-        "email": "kenna@mail.com"        
+        "email": "kenna@mail.com",
+        "password": "password"        
     }
 ]

@@ -1,26 +1,14 @@
 [
     {
-        "name": "AMC West Jordan 12",
-        "location": "1600 Fox Park Dr, West Jordan, UT 84088"
+        "id": "1",
+        "name": "AMC"
     },
     {
-        "name": "AMC Layton Hills 9",
-        "location": "728 W 1425 N, Layton, UT 84041"
+        "id": "2",
+        "name": "Cinemark"
     },
     {
-        "name": "Megaplex at Jordan Commons",
-        "location": "9335 State St, Sandy, UT 84070"
-    },
-    {
-        "name": "Megaplex at The District",
-        "location": "3761 W Parkway Plaza Dr, South Jordan, UT 84095"
-    },
-    {
-        "name": "Cinemark Sugarhouse",
-        "location": "2227 S Highland Dr, Salt Lake City, UT 84106"
-    },
-    {
-        "name": "Cinemark 24 Jordan Landing",
-        "location": "7301 S Jordan Landing Blvd, West Jordan, UT 84084"
+        "id": "3",
+        "name": "Megaplex"
     }
 ]
