@@ -26,6 +26,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 // end of carousel function 
-
-// function for click theatre photo that 
-// 
