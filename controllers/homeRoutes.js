@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Theatre, User, Address, Review } = require('../models');
 
 router.get('/', async (req, res) => {
-    Theatre.findAll({
+    Theatre.findOne({
         where: {
             id: 1
         }
