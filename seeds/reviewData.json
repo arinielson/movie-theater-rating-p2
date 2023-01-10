@@ -1,24 +1,27 @@
 [
     {
         "id": "1",
-        "review": "111 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+        "review": "All the staff was really friendly and I was able to get my popcorn quickyl!",
         "address_id": "1",
+        "theatre_id": "1",
         "user_id": "2",
         "user": "Jed",
         "userEmail": "jed@mail.com"
     },
     {
         "id": "2",
-        "review": "222 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+        "review": "This place had a lot of garbage on the floor and wasn't super clean. The movie was good though.",
         "address_id": "2",
+        "theatre_id": "2",
         "user_id": "3",
         "user": "Quinn",
         "userEmail": "quinn@mail.com"
     },
     {
         "id": "3",
-        "review": "333 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+        "review": "The movie was too loud!! I asked the staff to turn the volume down and they never did.",
         "address_id": "3",
+        "theatre_id": "3",
         "user_id": "4",
         "user": "Zane",
         "userEmail": "zane@mail.com"

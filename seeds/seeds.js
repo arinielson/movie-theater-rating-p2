@@ -27,6 +27,11 @@ const seedDatabase = async () => {
   }));  
 };
 
+const data = require('./theatreData.json');
+app.get('/movies', (req, res) => {
+    res.render('movies', { data });
+  });
+
 
 seedDatabase()
 .then(() => {
