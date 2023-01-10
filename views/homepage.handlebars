@@ -37,15 +37,30 @@
 <main>
   <section class="fx-display">
     <!--LEFT SIDE-->
-    <div class="callout secondary">
-      <div class="selected-theatre">
-        <div class="theatre-name">
-          <!--MOVIE THEATER SELECTED-->
-          {{theatre_name}}
+
+  <div class="callout secondary">
+   <div class="selected-theatre">
+      <div class="theatre-name">
+        <!--MOVIE THEATER SELECTED-->
+       selected theater: {{name}}
+      </div>
+    </div>  
+      <div class="callout secondary">
+        <div>
+          <!--SELECTED MOVIE THEATER ADDRESSES-->
+          theater addresses: {{theatre_address}}
         </div>
-    </div>    
-      <div class="callout secondary">  
-        <div class="theatre-address">
+      </div>
+    </div>
+
+    <div class="reviews-container">
+        theater reviews:
+    </div>
+    <!--RIGHT SIDE-->
+    {{!-- {{#if reviews.length}}
+      <div class="review">
+        {{#each reviews as |review|}}
+          <!--SELECTED MOVIE THEATER ADDRESS COMMENT/REVIEW-->
           <div>
             <!--SELECTED MOVIE THEATER ADDRESSES-->
             {{theatre_address}}
@@ -87,7 +102,8 @@
             </form>
           </div>
         </div>
-      </div>  
-    {{/if}}
+
+      </div>
+    {{/if}} --}}
   </section>
 </main>
