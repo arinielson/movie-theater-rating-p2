@@ -3,12 +3,20 @@
 
 ## Description
 
-Add description here
+A website to show different theater franchises where you can then select the location to view & add reviews. 
 
 
 ## Installation
 
-Intall instructions
+After cloning the repo you will need to do the following:
+
+* npm i
+* mysql -u [user] -p
+* enter mysql password
+* SOURCE db/schema.sql
+* quit
+* npm run seed
+* node server.js
 
 
 ## User Story
@@ -39,9 +47,9 @@ THEN I am redirected to another webpage to view movies & their showtimes
 
 ## Mock-Up
 
-The following image shows the TEMPORARY MOCK UP applications appearance & functionality:
+The following image shows the design mock up applications appearance & functionality:
 
-![The movie app includes a slideshow option for movie theatres, a list of addresses, and the addresses reviews.](./public/assets/Main-Movie-GO-Page.jpg)
+![The movie app includes a slideshow option for movie theatres, a list of addresses, and the addresses reviews.](./public/assets/test-project-screenshot.jpg)
 
 
 ## Contributors
@@ -59,7 +67,7 @@ Kenna Fackrell: https://github.com/kennacapri
 
 GitHub Repo: https://github.com/arinielson/movie-theater-rating-p2
 
-Website: 
+Website: https://movie-go.herokuapp.com/
 
 
 ## License
