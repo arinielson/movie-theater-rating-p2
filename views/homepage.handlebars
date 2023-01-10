@@ -37,12 +37,15 @@
 <main>
   <section class="fx-display">
     <!--LEFT SIDE-->
-    <div class="selected-theatre">
+
+  <div class="callout secondary">
+   <div class="selected-theatre">
       <div class="theatre-name">
         <!--MOVIE THEATER SELECTED-->
        selected theater: {{name}}
       </div>
-      <div class="theatre-address">
+    </div>  
+      <div class="callout secondary">
         <div>
           <!--SELECTED MOVIE THEATER ADDRESSES-->
           theater addresses: {{theatre_address}}
@@ -59,32 +62,47 @@
         {{#each reviews as |review|}}
           <!--SELECTED MOVIE THEATER ADDRESS COMMENT/REVIEW-->
           <div>
-            {{review.name}}:
-            {{review.text}}
-            <br />
-            {{review.email}}
+            <!--SELECTED MOVIE THEATER ADDRESSES-->
+            {{theatre_address}}
           </div>
-        {{/each}}
-        <div class="review-input">
-          <form class="review-form">
-            <div>
-              <label for="name-input">Name:</label>
-              <input type="text" id="name-review" />
-            </div>
-            <div>
-              <label for="email-input">Email:</label>
-              <input type="text" id="email-review" />
-            </div>
-            <div>
-              <label for="review-input">Enter review comments here:</label><br
-              />
-              <textarea class="comments"></textarea>
-            </div>
-            <div>
-              <button class="button-4" role="button" type="submit">Submit</button>
-            </div>
-          </form>
         </div>
+      </div>
+      
+    <!--RIGHT SIDE-->
+    <div class="callout secondary">
+      {{#if reviews.length}}
+        <div class="review">
+          {{#each reviews as |review|}}
+            <!--SELECTED MOVIE THEATER ADDRESS COMMENT/REVIEW-->
+            <div>
+              {{review.name}}:
+              {{review.text}}
+              <br />
+              {{review.email}}
+            </div>
+          {{/each}}
+          <div class="review-input">
+            <form class="review-form">
+              <div>
+                <label for="name-input">Name:</label>
+                <input type="text" id="name-review" />
+              </div>
+              <div>
+                <label for="email-input">Email:</label>
+                <input type="text" id="email-review" />
+              </div>
+              <div>
+                <label for="review-input">Enter review comments here:</label><br
+                />
+                <textarea class="comments"></textarea>
+              </div>
+              <div>
+                <button class="button-4" role="button" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
       </div>
     {{/if}} --}}
   </section>
